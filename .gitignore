@@ -1,0 +1,11 @@
+TAGS
+\#*
+.\#*
+.DS_Store
+*~
+*.orig
+.emacs*
+.projectile
+public/
+*.sublime*
+.grunt
