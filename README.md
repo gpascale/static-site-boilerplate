@@ -1,1 +1,1 @@
-Basic boilerplate for a static website using LESS, Grunt and standard JS libraries.
+Basic boilerplate for a website using node/express LESS, Grunt and standard JS libraries.

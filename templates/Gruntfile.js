@@ -56,26 +56,6 @@ module.exports = function(grunt) {
     });
 
     /*************************************************************************/
-    // Compile underscore templates
-    /*************************************************************************/
-    grunt.loadNpmTasks('grunt-contrib-jst');
-    grunt.config('jst', {
-        compile: {
-            options: {
-                namespace: '##PROJECT_NAME##.Templates',
-                processName: function(filename) {
-                    return path.basename(filename, '.tmpl');
-                },
-                prettify: true,
-                templateSettings: { variable: 'data' }
-            },
-            files: {
-                "public/js/templates.js": ["src/client/templates/*.tmpl"]
-            }
-        }
-    });
-
-    /*************************************************************************/
     // Concat
     /*************************************************************************/    
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -85,8 +65,8 @@ module.exports = function(grunt) {
             dest: 'public/css/##PROJECT_NAME##.css'
         },
         extjs: {
-            src: [ 'public/ext/js/jquery.min-1.10.2.js',
-                   'public/ext/js/underscore-min-1.5.1.js'],
+            src: [ 'public/ext/js/jquery-min.js',
+                   'public/ext/js/underscore-min.js' ],
             dest: 'public/js/deps.js'
         },
         js: {
@@ -157,5 +137,5 @@ module.exports = function(grunt) {
         src: ['**']
     });
 
-    grunt.registerTask('default', [ 'clean', 'less', 'copy', 'jst', 'concat' ]);
+    grunt.registerTask('default', [ 'clean', 'less', 'copy', 'concat' ]);
 };

@@ -10,8 +10,9 @@ echo "Creating necessary folders..."
 mkdir ./src
 mkdir ./src/js
 mkdir ./src/less
-mkdir ./src/templates
 mkdir ./ext
+mkdir ./ext/js
+mkdir ./ext/css
 mkdir ./assets
 
 echo "Copying code, markup and CSS boilerplate..."
