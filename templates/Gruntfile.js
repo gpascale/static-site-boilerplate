@@ -66,11 +66,12 @@ module.exports = function(grunt) {
         },
         extjs: {
             src: [ 'public/ext/js/jquery-min.js',
-                   'public/ext/js/underscore-min.js' ],
+                   'public/ext/js/underscore-min.js',
+                   'public/ext/js/*.js' ],
             dest: 'public/js/deps.js'
         },
         js: {
-            src: ['public/js/templates.js', 'src/js/**/*.js'],
+            src: [ 'src/js/**/*.js' ],
             dest: 'public/js/##PROJECT_NAME##.js',
             options: {
                 banner: ';(function() {\n',
