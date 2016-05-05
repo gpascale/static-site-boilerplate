@@ -39,4 +39,3 @@ rm setup.sh
 echo "Initializing new git project..."
 git init
 git add .
-git commit -m "Initial Commit"
