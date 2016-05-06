@@ -65,7 +65,7 @@ module.exports = function(grunt) {
             dest: 'public/css/##PROJECT_NAME##.css'
         },
         extjs: {
-            src: [ 'public/ext/js/jquery-min.js',
+            src: [ 'public/ext/js/jquery.min.js',
                    'public/ext/js/underscore-min.js',
                    'public/ext/js/*.js' ],
             dest: 'public/js/deps.js'
